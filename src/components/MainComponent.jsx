@@ -7,6 +7,7 @@ import { Context } from "./context"
 const Main = () => {
     const [data, setdata] = React.useState()
 
+
     const covidfetch = async () => {
 
         try {
@@ -19,13 +20,14 @@ const Main = () => {
         }
 
     }
+    
     React.useEffect(() => {
         covidfetch()
     }, [])
-    if (data) {
+    if (data ) {
         return (
             <Context.Provider value={data}>
-                <Home />
+                 <Home />
             </Context.Provider>
         )
     }

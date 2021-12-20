@@ -62,11 +62,23 @@ td {
   text-align: right;
 }
 
-.recovery
-{
+.recovery {
   color: green;
 }
-.active
-{
+
+.active {
   color: red;
+}
+
+.searchstate {
+  border        : solid;
+  width         : 80%;
+
+}
+input
+{
+  width: 100%;
+  padding:.5%;
+  font-size: 2vw;
+  border: none;
 }
