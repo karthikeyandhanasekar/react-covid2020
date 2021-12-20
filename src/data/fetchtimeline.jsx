@@ -37,10 +37,10 @@ export const FetchTimelineData = () => {
                 });
                 data.push({
                     name: name,
-                    recovered: recovered,
                     confirmed: confirmed,
+                    active: (confirmed - (recovered + deceased)),
+                    recovered: recovered,
                     deceased: deceased,
-                    active: (confirmed - (recovered + deceased))
                 });
             }
 
